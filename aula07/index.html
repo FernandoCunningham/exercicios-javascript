@@ -4,8 +4,29 @@
     <title>Curso Javascript</title>
 </head>
 <body>
+    <div id = "app">
+        <button onclick="mostraAlerta()">
+            Me pressione
+        </button>
+        <button onmouseover="mostraAlerta()">
+            Passe por mim
+        </button>
+        <input onkeypress="mostraAlerta()" />
+        <input type="password" id="senha" />
+        <input type="radio" />
+        <input type="range" />
+
+    </div>
+
     <script>
-        
+        function mostraAlerta(){
+            alert("Hello world!");
+        }
+        // Executando função
+        // mostraAlerta();
+
+        // Passando a função como parâmetro
+        // cosole.log(mostraAlerta);
     </script>
 </body>
 </html>
